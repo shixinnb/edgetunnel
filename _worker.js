@@ -1242,42 +1242,20 @@ async function getVLESSConfig(userID, hostName, sub, UA, RproxyIP, _url) {
 			else 订阅器 += `, 当前使用的ProxyIP: ${proxyIPs.join(', ')}`;
 		}
 		return `
+tg交流群:https://t.me/jiedian1111111
 ################################################################
-Subscribe / sub 订阅地址, 支持 Base64、clash-meta、sing-box 订阅格式, ${订阅器}
 ---------------------------------------------------------------
-快速自适应订阅地址:
+订阅地址:
 https://${proxyhost}${hostName}/${userID}
 https://${proxyhost}${hostName}/${userID}?sub
 
-Base64订阅地址:
-https://${proxyhost}${hostName}/${userID}?b64
-https://${proxyhost}${hostName}/${userID}?base64
 
-clash订阅地址:
-https://${proxyhost}${hostName}/${userID}?clash
-
-singbox订阅地址:
-https://${proxyhost}${hostName}/${userID}?sb
-https://${proxyhost}${hostName}/${userID}?singbox
 ---------------------------------------------------------------
 ################################################################
 v2ray
 ---------------------------------------------------------------
 ${v2ray}
 ---------------------------------------------------------------
-################################################################
-clash-meta
----------------------------------------------------------------
-${clash}
----------------------------------------------------------------
-################################################################
-telegram 交流群 技术大佬~在线发牌!
-https://t.me/CMLiussss
----------------------------------------------------------------
-github 项目地址 Star!Star!Star!!!
-https://github.com/cmliu/edgetunnel
----------------------------------------------------------------
-################################################################
 `;
 	} else {
 		if (typeof fetch != 'function') {
